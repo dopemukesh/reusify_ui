@@ -54,7 +54,7 @@ const Home = () => {
 
     if (matchedComponent) {
       // Assuming you have a route set up for each component
-      window.location.href = `/components/${matchedComponent.name}`;
+      window.location.href = `/components/${matchedComponent.name.toLowerCase()}`;
     } else {
       alert('Component not found');
     }
