@@ -1,5 +1,6 @@
 import React from 'react'
-import { MoonIcon, SunIcon } from './../assets/icons/icons'
+import MoonIcon from '/moon-light.svg'
+import SunIcon from '/sun-light.svg'
 import { create } from 'zustand'
 
 // Create a global theme store
@@ -34,7 +35,7 @@ const ThemeToggle = () => {
             onClick={toggleTheme} 
             className="z-50 bg-white dark:bg-brandDark-900 hover:bg-brandDark-100 dark:hover:bg-brandDark-800 border border-brandDark-200 dark:border-brandDark-700 shadow-md text-white text-md w-11 h-11 overflow-hidden grid place-items-center rounded-xl"
         >
-            {theme === "light" ? <MoonIcon /> : <SunIcon />}
+            {theme === "light" ? <img src={MoonIcon} alt="Moon Icon" /> : <img src={SunIcon} alt="Sun Icon" />}
         </button>
     )
 }
