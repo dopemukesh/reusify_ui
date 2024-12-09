@@ -46,6 +46,20 @@ const Home = () => {
     );
   }
 
+  const handleProcessNow = () => {
+    const searchTerm = search.toLowerCase().replace(/\s/g, '');
+    const matchedComponent = SearchData.find(component =>
+      component.name.toLowerCase().replace(/\s/g, '') === searchTerm
+    );
+
+    if (matchedComponent) {
+      // Assuming you have a route set up for each component
+      window.location.href = `/components/${matchedComponent.name}`;
+    } else {
+      alert('Component not found');
+    }
+  }
+
   return (
     <>
       <div className='min-h-screen-minus-header py-56 w-full flex justify-center'>
@@ -67,7 +81,10 @@ const Home = () => {
             </div>
 
             {/* Process Now Button */}
-            <button className="bg-brandDark-900 hover:bg-brandDark-600 dark:bg-white dark:hover:bg-brandDark-200 text-sm font-medium text-white dark:text-brandDark-800 px-4 py-2 rounded-md active:scale-95 whitespace-nowrap">
+            <button
+              onClick={handleProcessNow}
+              className="bg-brandDark-900 hover:bg-brandDark-600 dark:bg-white dark:hover:bg-brandDark-200 text-sm font-medium text-white dark:text-brandDark-800 px-4 py-2 rounded-md active:scale-95 whitespace-nowrap"
+            >
               <span>Process Now</span>
             </button>
           </div>

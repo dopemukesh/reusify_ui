@@ -6,7 +6,7 @@ const DocsSidebar = () => {
     const currentPath = location.pathname;
 
     return (
-        <aside className='w-full md:w-80 h-auto md:h-screen border-b md:border-r border-brandDark-200 dark:border-brandDark-500 overflow-y-auto md:fixed'>
+        <aside className='w-full md:w-64 h-auto md:h-screen border-b md:border-r border-brandDark-200 dark:border-brandDark-500 overflow-y-auto md:fixed'>
             <div className='p-6'>
                 <h2 className='text-xl font-semibold text-gray-900 dark:text-white mb-4'>Getting Started</h2>
 

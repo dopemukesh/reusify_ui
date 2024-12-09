@@ -16,26 +16,28 @@ const Components = () => {
   ];
 
   return (
-    <div className='flex flex-col md:flex-row'>
-      {/* Sidebar */}
-      <CommonDetailsSidebar />
+    <div className='flex flex-col md:flex-row justify-center'>
+      <div className='max-w-[1440px] flex-1'>
+        {/* Sidebar */}
+        <CommonDetailsSidebar />
 
-      {/* Main Content */}
-      <div className='w-full md:ml-80 min-h-screen'>
-        <div className='max-w-4xl px-4 pb-4'>
+        {/* Main Content */}
+        <div className='w-full md:ml-64 min-h-screen'>
+          <div className='max-w-4xl px-4 pb-4'>
 
-          {/* Breadcrumbs */}
-          <BreadCrumbs />
-          {/* Breadcrumbs Ends */}
+            {/* Breadcrumbs */}
+            <BreadCrumbs />
+            {/* Breadcrumbs Ends */}
 
-          {/* Contents */}
-          <ComponentsContents />
-          {/* Contents Ends */}
+            {/* Contents */}
+            <ComponentsContents />
+            {/* Contents Ends */}
 
-          {/* Pagination */}
-          <Paginations routes={routes} />
-          {/* Pagination Ends */}
+            {/* Pagination */}
+            <Paginations routes={routes} />
+            {/* Pagination Ends */}
 
+          </div>
         </div>
       </div>
     </div>
