@@ -7,7 +7,7 @@ import Usage from './DocsData/Usage';
 const DocsContents = () => {
     return (
         <div className='w-full min-h-screen'>
-            <div className='max-w-4xl px-4 py-8'>
+            <div className='max-w-4xl px-3 py-8'>
                 <Routes>
                     <Route path="introduction" element={<Introduction />} />
                     <Route index element={<Navigate to="/docs/introduction" replace />} />

@@ -6,7 +6,7 @@ const BreadCrumbs = () => {
   const pathSegments = location.pathname.split('/').filter(segment => segment);
 
   return (
-    <nav className="flex mx-2 sticky top-[4.5rem] z-10 py-3 px-2 rounded-md bg-white/60 dark:bg-brandDark-950/50 backdrop-blur-md" aria-label="Breadcrumb">
+    <div className="flex sticky top-[4.5rem] z-10 py-3 px-2 my-2 rounded-md bg-white/60 dark:bg-brandDark-950/50 backdrop-blur-md border border-brandDark-200 dark:border-brandDark-800" aria-label="Breadcrumb">
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
         <li className="inline-flex items-center">
           <Link to="/" className="inline-flex items-center text-sm font-medium text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300">
@@ -33,7 +33,7 @@ const BreadCrumbs = () => {
           </li>
         ))}
       </ol>
-    </nav>
+    </div>
   )
 }
 
