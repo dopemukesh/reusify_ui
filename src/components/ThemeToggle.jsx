@@ -1,5 +1,5 @@
 import React from 'react'
-import { MoonIcon, SunIcon } from '../assets/icons/icons'
+import { MoonIcon, SunIcon } from './../assets/icons/icons'
 import { create } from 'zustand'
 
 // Create a global theme store
